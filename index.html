@@ -23,6 +23,13 @@
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
 
+        html {
+            /* Prevents mobile browsers from auto-scaling text */
+            -webkit-text-size-adjust: 100%;
+            -moz-text-size-adjust: 100%;
+            text-size-adjust: 100%;
+        }
+
         body {
             font-family: 'Nunito', sans-serif;
             color: var(--text-main);
