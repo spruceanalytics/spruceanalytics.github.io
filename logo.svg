@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">-->
+<svg width="450" height="450" viewBox="0 0 450 450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <g id="one_spruce">
+      <path d="M225, 50 L225, 50 A25,25 0 0,0 225,100 L225,100 Z" fill="#40C080" />
+      <path d="M225, 50 L225, 50 A25,25 0 0,1 225,100 L225,100 Z" fill="#444444" />
+    
+      <path d="M225,150 L175,150 A25,25 0 0,0 175,200 L225,200 Z" fill="#40C080" />
+      <path d="M225,150 L275,150 A25,25 0 0,1 275,200 L225,200 Z" fill="#444444" />
+    
+      <path d="M225,250 L125,250 A25,25 0 0,0 125,300 L225,300 Z" fill="#40C080" />
+      <path d="M225,250 L325,250 A25,25 0 0,1 325,300 L225,300 Z" fill="#444444" />
+    
+      <path d="M225,350  L75,350 A25,25 0 0,0  75,400 L225,400 Z" fill="#40C080" />
+      <path d="M225,350 L375,350 A25,25 0 0,1 375,400 L225,400 Z" fill="#444444" />
+    </g>
+  </defs>
+
+  <use href="#one_spruce" x="0" y="0" />
+  <!--<use href="#one_spruce" x="350" y="75" />-->
+
+ 
+</svg>

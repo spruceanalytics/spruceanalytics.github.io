@@ -1,17 +1,157 @@
 <!DOCTYPE html>
-<html lang='en'>
-    <head>
-        <meta charset='UTF-8'/>
-        <title>Spruce Analytics</title>
-        <link rel='stylesheet' href='styles.css'/>
-    </head>
-    <body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spruce Analytics</title>
+    
+    <link rel="icon" type="image/svg+xml" href="logo.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Quicksand:wght@700&display=swap" rel="stylesheet">
+
+            <!--primary-color: #00A070;-->
+    <style>
+        :root {
+            --primary-color: #40C080;
+            --secondary-color: #333333;
+            --bg-light: #f8f8f8;
+            --text-main: #444444;
+            --hero-size: clamp(1.5rem, 8vw, 4.0rem);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 { font-family: 'Quicksand', sans-serif; color: var(--secondary-color); font-size: clamp(1.0rem, 1.6vw, 2.0rem); }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 5%;
+            background: white;
+        }
+
+        .logo { display: flex; align-items: center; gap: 10px; font-size: 1.5rem; font-weight: bold; }
+
+        .logo img {
+            vertical-align: middle;
+            margin-bottom: 4px; /* A tiny nudge to make it look optically centered */
+        }
+
+        .nav-links { list-style: none; display: flex; gap: 2rem; }
+        .nav-links a { text-decoration: none; color: var(--secondary-color); font-weight: 600; }
+
+        /* Hero Section */
+        .hero {
+            padding-top: 120px;
+            padding-bottom: 40px;
+            padding-left: 5%;
+            padding-right: 5%;
+            text-align: center;
+            background: white;
+            <!--background: var(--bg-light);-->
+        }
+
+        .hero img {
+            vertical-align: middle;
+            margin-bottom: 10px; /* A tiny nudge to make it look optically centered */
+            margin-right: 12px;
+            height: var(--hero-size);
+        }
+
+        .hero h1 { font-size: var(--hero-size); margin-bottom: 1rem; }
+        .hero p { font-size: clamp(1.25rem, 5vw, 2.0rem); max-width: 600px; margin: 0 auto 2rem; }
+
+        .btn {
+            background: var(--primary-color);
+            color: white;
+            padding: 0.8rem 2rem;
+            border-radius: 50px; /* Matches the rounded vibe */
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            transition: transform 0.2s;
+        }
+        .btn:hover { transform: translateY(-2px); }
+
+        /* Features Section */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            padding: 40px 5%;
+        }
+
+        .feature-card {
+            padding: 2rem;
+            border: 1px solid var(--primary-color);
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        footer {
+            padding: 2.0rem 5%;
+            text-align: center;
+            border-top: 1px solid var(--primary-color);
+            font-size: 0.9rem;
+        }
+
+        footer p {
+            margin-bottom: 1.0rem; /* Adjust this value for more or less gap */
+        }
+    </style>
+</head>
+<body>
+
+<!--
+    <nav>
+        <div class="logo">
+            <img src="logo.svg" alt="Spruce Analytics Logo" width="40" height="auto">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="mailto:spruceanalytics@gmail.com">Contact</a></li>
+        </ul>
+    </nav>
+-->
+
+    <section class="hero">
         <h1>
-            <img src='img/logo.svg' height='27' alt='Spruce forest'/>
+            <img src="logo.svg" alt="Spruce Analytics Logo">
             Spruce Analytics
         </h1>
-	<p>Contact: 
-	    <a>spruce</a><a>analytics</a><a>@</a><a>gmail</a><a>.com</a></p>
-    </body>
-</html>
+        <p>Strategic bioinformatics consulting</p>
+        <!--<a href="mailto:spruceanalytics@gmail.com" class="btn">Get in Touch</a>-->
+    </section>
 
+    <section class="features" id="features">
+        <div class="feature-card">
+            <h3>Data Analysis</h3>
+            <p>Clear reasoning. Interpretable results.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Development</h3>
+            <p>Tidy design. Robust implementation.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Project Management</h3>
+            <p>Intelligent goals. On-time delivery.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Contact: <strong>spruceanalytics@gmail.com</strong></p>
+        <p>&copy; 2025 Spruce Analytics, LLC. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
