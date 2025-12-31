@@ -84,7 +84,7 @@
         .btn:hover { transform: translateY(-2px); }
 
         /* Features Section */
-        .features {
+/*        .features {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
             gap: 2rem;
@@ -96,6 +96,30 @@
             border: 1px solid var(--primary-color);
             border-radius: 15px;
             text-align: center;
+        }
+*/
+        .features {
+            display: grid;
+            /* We keep the auto-fit, but 300px often forces the stack 
+               sooner on tablets, which looks more professional. */
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            padding: 60px 5%; /* Increased top/bottom for better section separation */
+        }
+        
+        @media (max-width: 480px) {
+            .features {
+                /* On very small phones, we decrease horizontal padding 
+                   so the cards have more room for text. */
+                padding: 40px 15px; 
+                gap: 1.5rem; /* Slightly tighter gap on mobile */
+            }
+        
+            .feature-card {
+                /* Optional: reduce internal padding on mobile so 
+                   the text doesn't wrap too much. */
+                padding: 1.5rem;
+            }
         }
 
         footer {
