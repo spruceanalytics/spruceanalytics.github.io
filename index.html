@@ -47,7 +47,13 @@
             height: var(--hero-size);
         }
 
-        .hero h1 { font-size: var(--hero-size); margin-bottom: 1rem; }
+        .hero h1 {
+            font-size: var(--hero-size);
+            margin-bottom: 1rem;
+            font-weight: 300; /* Lighter weight feels more thoughtful */
+            letter-spacing: 0.05em; /* Subtle spacing feels more premium */
+            text-transform: uppercase; /* Optional: adds an "authoritative" feel */
+        }
         .hero p { font-size: clamp(1.2rem, 5vw, 1.2rem); max-width: 600px; margin: 0 auto 2rem; }
 
 
@@ -76,35 +82,22 @@
         }
 
         footer p {
-            margin-bottom: 1.0rem; /* Adjust this value for more or less gap */
+            margin-bottom: 1.0rem;
         }
     </style>
 </head>
 <body>
 
-    <p style="position: fixed; top: 0; background: red; color: white; z-index: 9999;">
+    <!--<p style="position: fixed; top: 0; background: red; color: white; z-index: 9999;">
        Width: <script>document.write(window.innerWidth)</script>px
-    </p>
-
-<!--
-    <nav>
-        <div class="logo">
-            <img src="logo.svg" alt="Spruce Analytics Logo" width="40" height="auto">
-        </div>
-        <ul class="nav-links">
-            <li><a href="#features">Features</a></li>
-            <li><a href="mailto:spruceanalytics@gmail.com">Contact</a></li>
-        </ul>
-    </nav>
--->
+    </p>-->
 
     <section class="hero">
         <h1>
             <img src="logo.svg" alt="Spruce Analytics Logo">
             Spruce Analytics
         </h1>
-        <p>Strategic bioinformatics consulting</p>
-        <!--<a href="mailto:spruceanalytics@gmail.com" class="btn">Get in Touch</a>-->
+        <p>Principled bioinformatics consulting</p>
     </section>
 
     <section class="features" id="features">
